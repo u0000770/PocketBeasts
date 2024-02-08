@@ -1,0 +1,7 @@
+@startuml
+class Graveyard {
+    + Graveyard()
+    + Add(card:Card) : void
+    + Count : int <<get>>
+}
+@enduml

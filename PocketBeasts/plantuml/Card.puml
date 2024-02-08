@@ -1,0 +1,17 @@
+@startuml
+class Card {
+    + Card(id:string, name:string, manaCost:int, attack:int, health:int)
+    + Card(card:Card)
+    + Id : string <<get>>
+    + Name : string <<get>>
+    + ManaCost : int <<get>>
+    + Attack : int <<get>>
+    + Health : int <<get>>
+    + Damage(amount:int) : void
+    + <<override>> ToString() : string
+    + CompareTo(other:Card) : int
+}
+class "IComparable`1"<T> {
+}
+"IComparable`1" "<Card>" <|-- Card
+@enduml

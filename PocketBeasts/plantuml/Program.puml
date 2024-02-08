@@ -1,0 +1,7 @@
+@startuml
+class MainClass {
+    + {static} GetStarterDeck() : List<Card>
+    + {static} GetPrompt(prompt:string, validResponse:string[]) : string
+    + {static} Main(args:string[]) : void
+}
+@enduml

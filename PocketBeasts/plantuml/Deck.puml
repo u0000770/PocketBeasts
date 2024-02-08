@@ -1,0 +1,8 @@
+@startuml
+class Deck {
+    + Deck(cards:List<Card>)
+    + Count : int <<get>>
+    + Draw() : Card
+    + Shuffle() : void
+}
+@enduml

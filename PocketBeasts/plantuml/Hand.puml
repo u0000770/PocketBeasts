@@ -1,0 +1,14 @@
+@startuml
+class Hand {
+    + Hand()
+    + Add(card:Card) : void
+    + Remove(card:Card) : void
+    + RemoveAll(cards:List<Card>) : void
+    + Count : int <<get>>
+    + Sort() : void
+    + <<override>> ToString() : string
+}
+class "List`1"<T> {
+}
+Hand --> "Cards<Card>" "List`1"
+@enduml

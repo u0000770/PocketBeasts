@@ -1,0 +1,12 @@
+@startuml
+!include .\\Card.puml
+!include .\\Deck.puml
+!include .\\GraveYard.puml
+!include .\\Hand.puml
+!include .\\InPlay.puml
+!include .\\Player.puml
+!include .\\Program.puml
+!include .\\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.puml
+!include .\\obj\Debug\net8.0\PocketBeasts.AssemblyInfo.puml
+!include .\\obj\Debug\net8.0\PocketBeasts.GlobalUsings.g.puml
+@enduml

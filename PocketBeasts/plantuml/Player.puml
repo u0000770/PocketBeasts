@@ -1,0 +1,18 @@
+@startuml
+class Player {
+    + Player(name:string, deck:Deck)
+    + Name : string <<get>>
+    + ManaAvailable : int <<get>>
+    + Health : int <<get>>
+    + NewGame() : void
+    + AddMana() : void
+    + UseMana(amount:int) : void
+    + DrawCard() : void
+    + Damage(amount:int) : bool
+    + <<override>> ToString() : string
+}
+Player --> "Deck" Deck
+Player --> "Hand" Hand
+Player --> "InPlay" InPlay
+Player --> "Graveyard" Graveyard
+@enduml

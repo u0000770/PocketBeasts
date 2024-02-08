@@ -1,0 +1,13 @@
+@startuml
+class InPlay {
+    + InPlay()
+    + GetCard(index:int) : Card
+    + Add(card:Card) : void
+    + Remove(card:Card) : void
+    + RemoveAll(cards:List<Card>) : void
+    + Count : int <<get>>
+}
+class "List`1"<T> {
+}
+InPlay --> "Cards<Card>" "List`1"
+@enduml
